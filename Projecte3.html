@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tarja de visita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Alarms_%26_Clock_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Projecte.css">
+    <link rel="stylesheet" type="text/css" media="print" href="Projecte-print.css">
+    <script src="main.js"></script>
+    <style>
+        .tarja {
+        background-color: white;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4);
+        width: 30%;
+        margin: auto;
+        }
+
+        .tarja:hover {
+        box-shadow: 0 9px 16px 0 rgba(0,0,0,0.4);
+        }
+
+        .texte {
+        padding: 2px 16px;
+        }
+
+        h4{
+        font-size: larger;
+        color:rgb(104, 35, 168);
+        }
+        @media screen and (max-width: 1024px) {
+            .tarja{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Projecte CSS</h1>
+    </header>
+    <nav id="menu">
+        <ul align="center"> 
+            <li><a href='Projecte.html'>Formulari de contacte</a></li>
+            <li><a href='Projecte2.html'>Taula, llistes, etc.</a></li>
+            <li id="current"><a href='Projecte3.html'>Tarja de visita</a></li>
+            <li><a href='Projecte4.html'>Mostres loremipsum</a></li>
+            <li><a href='Projecte5.html'>Poster CSS</a></li>
+            <li><a href='Projecte6.html'>Exemple posicionament</a></li>
+        </ul>
+    </nav>
+    <section class="contingut">
+        <h1 class="titol">Tarja de visita</h1>
+        <article class="tarja">
+            <img src="https://i.pinimg.com/originals/96/a4/fb/96a4fb8a0eb8529da389c5cbe1bdba0a.jpg" style="width:100%; margin:0;">
+            <article class="texte">
+                <h4>Dana Gomez Balada</h4>
+                <p>INS Joan Brudieu</p>
+                <p>Puigcerdà</p>
+                <p style="font-size: small">*Not a panda</p>
+            </article>
+        </article>
+    </section>
+    <aside class="contingut">
+            <p>Links a llocs web</p>
+            <div class="aside">
+                <a href='https://www.w3schools.com/'><img src="https://www.w3schools.com/favicon.ico"></a>
+                <a href='https://www.facebook.com/'><img src="http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png"></a>
+                <a href='https://twitter.com/'><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png"></a>
+                <a href='https://moodle.insjoanbrudieu.cat'><img src="https://cdn.iconscout.com/icon/free/png-256/moodle-2-569555.png"></a>
+                <a href='https://www.google.es/'><img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-icon.png"></a>                  
+                <a href='https://www.instagram.com'><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-128.png"></a>
+            </div>
+        </aside>
+    <footer>
+        &copy; 2019 Projecte CSS Dana Gomez Balada.
+    </footer>
+</body>
+</html>

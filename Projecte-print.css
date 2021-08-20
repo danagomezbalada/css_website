@@ -1,0 +1,22 @@
+@media only print {
+  body{
+    background-color: white;
+  }
+  header,aside,nav,footer{
+    display:none;
+  }
+  *{
+    float:none;
+  }
+  section{
+    width: 100%;
+    height:auto;
+  }
+  section *{
+    display: inline-block;
+  }
+  h1{
+    text-align: center;
+    display: block;
+  }
+}

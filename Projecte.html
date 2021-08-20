@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulari de contacte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Alarms_%26_Clock_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Projecte.css">
+    <link rel="stylesheet" type="text/css" media="print" href="Projecte-print.css">
+    <script src="main.js"></script>
+    <style>
+        /* Form */
+        form{
+            padding: 4px 15px;
+        }
+        span{
+            font-size: small;
+            font-weight: none;
+        }
+        input[type=text], select, textarea, input[list="ciutats"]{
+            width: 95%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            padding: 12px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: rgb(155, 76, 175);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #8345a0;
+        }
+        /* Form FI */
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Projecte CSS</h1>
+    </header>
+    <nav id="menu">
+        <ul align="center"> 
+            <li id="current"><a href='Projecte.html'>Formulari de contacte</a></li>
+            <li><a href='Projecte2.html'>Taula, llistes, etc.</a></li>
+            <li><a href='Projecte3.html'>Tarja de visita</a></li>
+            <li><a href='Projecte4.html'>Mostres loremipsum</a></li>
+            <li><a href='Projecte5.html'>Poster CSS</a></li>
+            <li><a href='Projecte6.html'>Exemple posicionament</a></li>
+        </ul>
+    </nav>
+    <section class="contingut">
+        <h1 class="titol">Formulari de contacte</h1>
+        <form action="/action_page.php">
+            <label for="nom">Nom <span>(Input)</span></label>
+            <input type="text" id="nom" name="nom" placeholder="El teu nom...">
+        
+            <label for="cognom">Cognoms <span>(Input)</span></label>
+            <input type="text" id="cognom" name="cognom" placeholder="Els teus cognoms...">
+            
+            <label for="sexe">Sexe <span>(Radio)</span></label><br>
+            <input type="radio" name="sexe" value="home" checked> Home<br>
+            <input type="radio" name="sexe" value="dona"> Dona<br>
+            <input type="radio" name="sexe" value="altre"> Altre<br>
+
+            <label for="pais">País <span>(Select)</span></label>
+            <select id="pais" name="pais">
+              <option value="espanya">Espanya</option>
+              <option value="francia">Francia</option>
+              <option value="regneUnit">Regne Unit</option>
+              <option value="italia">Italia</option>
+            </select>
+
+            <label for="ciutats">Ciutat <span>(Datalist)</span></label>
+            <input list="ciutats" name="ciutat">
+            <datalist id="ciutats">
+                <option value="Barcelona">
+                <option value="La Seu d'Urgell">
+                <option value="Puigcerdà">
+                <option value="Tarragona">
+                <option value="Sabadell">
+            </datalist>
+
+            <label for="ocupacio">Ocupació <span>(Checkbox)</span></label><br>
+            <input type="checkbox" name="ocupacio" value="Treballo"> Treballo<br>
+            <input type="checkbox" name="ocupaco" value="Estudio"> Estudio<br>
+        
+            <label for="missatge">Missatge <span>(Textarea)</span></label>
+            <textarea id="missatge" name="missatge" placeholder="Escriu el teu missatge..." style="height:200px"></textarea>
+        
+            <input type="submit" value="Enviar">
+          </form>
+    </section>
+    <aside class="contingut">
+            <p>Links a llocs web</p>
+            <div class="aside">
+                <a href='https://www.w3schools.com/'><img src="https://www.w3schools.com/favicon.ico"></a>
+                <a href='https://www.facebook.com/'><img src="http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png"></a>
+                <a href='https://twitter.com/'><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png"></a>
+                <a href='https://moodle.insjoanbrudieu.cat'><img src="https://cdn.iconscout.com/icon/free/png-256/moodle-2-569555.png"></a>
+                <a href='https://www.google.es/'><img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-icon.png"></a>                  
+                <a href='https://www.instagram.com'><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-128.png"></a>
+            </div>
+        </aside>
+    <footer>
+            &copy; 2019 Projecte CSS Dana Gomez Balada.
+    </footer>
+</body>
+</html>

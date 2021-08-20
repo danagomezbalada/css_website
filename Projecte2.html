@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taula, llistes, etc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Alarms_%26_Clock_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Projecte.css">
+    <link rel="stylesheet" type="text/css" media="print" href="Projecte-print.css">
+    <script src="main.js"></script>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        width: 100%;
+        margin:15px 0 40px;
+        border-collapse: collapse;
+        }
+        table *{
+        border-radius: unset;
+        }
+        /*Taula 1*/
+        #t01 td, #t01 th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+        }
+        #t01 th{
+        border: 1px solid #ffffff;
+        background-color: #8345a0;
+        color:white;
+        }
+        #t01 td{
+        font-weight:normal;
+        }
+        #t01 tr:nth-child(even) {
+        background-color: #a494b37c;
+        }
+        /*Taula 1 FI*/
+        /*Taula 2*/
+        #t02 td, #t02 th{
+            padding: 8px;
+            text-align: left;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+        #t02 tr:hover {
+            background-color:#a494b333;
+        }
+        /*Taula 2 FI*/
+        /*Taula 3*/
+        #t03 td, #t03 th{
+            padding: 8px;
+            text-align: left;
+            height: 40px;
+            vertical-align: bottom;
+            border: 1px solid white;
+        }
+        /*Taula 3 FI*/
+        #llistes{
+            padding:10px;
+            margin-left: 38%;
+        }
+        #llistes ol{
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+        #llistes ul{
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Projecte CSS</h1>
+    </header>
+    <nav id="menu">
+        <ul align="center"> 
+            <li><a href='Projecte.html'>Formulari de contacte</a></li>
+            <li id="current"><a href='Projecte2.html'>Taula, llistes, etc.</a></li>
+            <li><a href='Projecte3.html'>Tarja de visita</a></li>
+            <li><a href='Projecte4.html'>Mostres loremipsum</a></li>
+            <li><a href='Projecte5.html'>Poster CSS</a></li>
+            <li><a href='Projecte6.html'>Exemple posicionament</a></li>
+        </ul>
+    </nav>
+    <section class="contingut">
+        <article id="taules">
+            <h1 class="titol">Taules</h1>
+            <table id="t01">
+                <caption>Clients</caption>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Telèfon</th>
+                    <th>Ciutat</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jardel Emerson</td>
+                    <td>123456789</td>
+                    <td>Portugal</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Elleanor Bryan</td>
+                    <td>987654321</td>
+                    <td>Itàlia</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kristen Harrell</td>
+                    <td>482514396</td>
+                    <td>Suècia</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Colin Rodriguez</td>
+                    <td>291857483</td>
+                    <td>Estats Units</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rumaysa Perez</td>
+                    <td>681345297</td>
+                    <td>Espanya</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rita Firth</td>
+                    <td>492745167</td>
+                    <td>Alemanya</td>
+                </tr>
+            </table>
+            <table id="t02">
+                <caption>Telèfons</caption>
+                <tr>
+                    <th>Nom</th>
+                    <th colspan="3">Telèfons</th>
+                </tr>
+                <tr>
+                    <td>Mark Twain</td>
+                    <td>55577854</td>
+                    <td>55577855</td>
+                    <td>55083202</td>
+                </tr>
+            </table>
+            <table id="t03">
+                <caption>Telèfons</caption>
+                <tr>
+                    <th style="background-color:#a494b37c">Nom</th>
+                    <td>Martha Stweart</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" style="background-color:#a494b37c">Telèfons</th>
+                    <td>55577854</td>
+                </tr>
+                <tr>
+                    <td>55577855</td>
+                </tr>
+                <tr>
+                    <td>55083202</td>
+                </tr>
+            </table>
+        </article>
+        <h1 class="titol">Llistes</h1>
+        <article id="llistes">
+            <ol type="1">
+                <li>Llista</li>
+                <li>Ordenada</li>
+                <li>(Ordered List)</li>
+            </ol><br>
+            <ul>
+                <li>Llista</li>
+                <li>Desordenada</li>
+                <li>(Unordered List)</li>
+            </ul>
+        </article>
+        <article id="i-frames">
+            <h1 class="titol">I-frames</h1>
+            <iframe src="Projecte.html" style="width:100%;height:500px;"></iframe>
+        </article>
+    </section>
+    <aside class="contingut">
+            <p>Links a llocs web</p>
+            <div class="aside">
+                <a href='https://www.w3schools.com/'><img src="https://www.w3schools.com/favicon.ico"></a>
+                <a href='https://www.facebook.com/'><img src="http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png"></a>
+                <a href='https://twitter.com/'><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png"></a>
+                <a href='https://moodle.insjoanbrudieu.cat'><img src="https://cdn.iconscout.com/icon/free/png-256/moodle-2-569555.png"></a>
+                <a href='https://www.google.es/'><img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-icon.png"></a>                  
+                <a href='https://www.instagram.com'><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-128.png"></a>
+            </div>
+        </aside>
+    <footer>
+        &copy; 2019 Projecte CSS Dana Gomez Balada.
+    </footer>
+</body>
+</html>

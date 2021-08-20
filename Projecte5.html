@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poster CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Alarms_%26_Clock_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Projecte.css">
+    <link rel="stylesheet" type="text/css" media="print" href="Projecte-print.css">
+    <script src="main.js"></script> 
+    <style>
+        .fotos{
+            width: 48%;
+            float: left;
+        }
+        .fotos img{
+            width: 100%;
+            height: 270px;
+            margin:0;
+        }
+        .fotos p{
+            text-align: center;
+            display:none;
+            z-index: 10;
+        }
+        .fotos:hover img{
+            height: 236px;
+        }
+        .fotos:hover{
+            background-color: white;
+            border: 1px solid rgb(180, 180, 180);
+            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+        }
+        .fotos:hover p{
+            display: block;
+        }
+        @media screen and (max-width: 1024px) {
+            .fotos{
+            width: 60%;
+            padding: 0;
+            margin: 10px 130px;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .fotos{
+            width:90%;
+            margin: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Projecte CSS</h1>
+    </header>
+    <nav id="menu">
+        <ul align="center"> 
+            <li><a href='Projecte.html'>Formulari de contacte</a></li>
+            <li><a href='Projecte2.html'>Taula, llistes, etc.</a></li>
+            <li><a href='Projecte3.html'>Tarja de visita</a></li>
+            <li><a href='Projecte4.html'>Mostres loremipsum</a></li>
+            <li id="current"><a href='Projecte5.html'>Poster CSS</a></li>
+            <li><a href='Projecte6.html'>Exemple posicionament</a></li>
+        </ul>
+    </nav>
+    <section class="contingut">
+        <h1 class="titol">Poster CSS</h1>
+        <article class="fotos">
+            <img src="https://learnwebcode.com/wp-content/uploads/2010/02/anatomy-of-a-css-rule.gif">
+            <p>Sintaxis CSS</p>
+        </article>
+        <article class="fotos">
+            <img src="https://tutorial.techaltum.com/images/css-selectors.png">
+            <p>Selectors d'elements</p>
+        </article>
+        <article class="fotos">
+            <img src="https://kevinyank.com/assets/images/blog/css-selectors-redux/slide.002.png">
+            <p>Més selectors d'elements</p>
+        </article>
+        <article class="fotos">
+            <img src="https://cdn-images-1.medium.com/max/565/1*6DrszcyPybYDGziiS9CWdg.png">
+            <p>Model de caixa</p>
+        </article>
+        <article class="fotos">
+            <img src="https://www.html5rocks.com/en/tutorials/shapes/getting-started/reference-box-margin-box.png">
+            <p>Més sobre el margin</p>
+        </article>
+        <article class="fotos">
+            <img src="https://html-css-js.com/images/tiles/css-font-styles.jpg">
+            <p>Estils de text i fonts</p>
+        </article>
+        <article class="fotos">
+            <img src="https://lh6.googleusercontent.com/proxy/mKh-jFVULZUbgOK-0aCTcfsfv0ZKwJi-9isn34PQYGc4Ma8vo-mi6hfPGe2Ghy82rWyAM_luWjNVeTKGEFRiLHAlZkkPpgVWuQfg-yP9OzkHiicFbXS5C1yelX2JWq58K92ejAY6v-j7EJgJNioCVWtzAkYXLDGd7q9n_o-S7v2_9LZqJv9bUZBlM8TShyn2j_iyFNrGvyVyiMcHuoyXTzuIpD6Q8Nk=s0-d">
+            <p>Media queries per diferents tamanys</p>
+        </article>
+        <article class="fotos">
+            <img src="https://css-tricks.com/wp-content/uploads/2017/02/holy-grail-example.jpg">
+            <p>Un layout simple</p>
+        </article>
+    </section>
+    <aside class="contingut">
+            <p>Links a llocs web</p>
+            <div class="aside">
+                <a href='https://www.w3schools.com/'><img src="https://www.w3schools.com/favicon.ico"></a>
+                <a href='https://www.facebook.com/'><img src="http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png"></a>
+                <a href='https://twitter.com/'><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png"></a>
+                <a href='https://moodle.insjoanbrudieu.cat'><img src="https://cdn.iconscout.com/icon/free/png-256/moodle-2-569555.png"></a>
+                <a href='https://www.google.es/'><img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-icon.png"></a>                  
+                <a href='https://www.instagram.com'><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-128.png"></a>
+            </div>
+        </aside>
+    <footer>
+        &copy; 2019 Projecte CSS Dana Gomez Balada.
+</footer>
+</body>
+</html>
